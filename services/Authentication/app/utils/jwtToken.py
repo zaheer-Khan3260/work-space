@@ -3,12 +3,9 @@ import jwt
 import os
 import bcrypt
 from datetime import datetime, timedelta
-from dotenv import load_dotenv
 
-load_dotenv()
 
 SECRET_KEY = os.getenv("ACCESS_TOKEN_SECRET")
-print(type(SECRET_KEY))
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = os.getenv("ACCESS_TOKEN_EXPIRY")
 
